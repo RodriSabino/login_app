@@ -1,13 +1,13 @@
 import './global.css';
-import { FaFacebookF, FaGoogle } from 'react-icons/fa';
-
+import { FaFacebookF, FaGoogle, FaRegEnvelope } from 'react-icons/fa';
+import { MdLockOutline } from 'react-icons/md';
 function LoginPage() {
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen py-2 bg-black'>
-      <section id="up"></section>
-      <section id="down"></section>
-      <section id="left"></section>
-      <section id="right"></section>
+    <div className='flex flex-col items-center justify-center min-h-screen py-2 bg-opacity-100'>
+      <section id="up" className=""></section>
+      <section id="down" className=""></section>
+      <section id="left" className=""></section>
+      <section id="right" className=""></section>
       
       <main className='flex flex-col items-center justify-center w-full flex-1 px-20 text-center'>
         <div className="bg-white rounded-2xl shadow-2xl flex w-2/3 max-w-4xl">
@@ -26,8 +26,22 @@ function LoginPage() {
                   <FaGoogle className="text-sm" />
                 </a>
               </div>
-              <p className="text-gray-500 text-sm">or use your email account:</p>
-              <div className="bg-gray-100"></div>
+              <p className="text-gray-400 my-3">or use your email account:</p>
+              <div className="flex flex-col items-center ">
+                <div className="bg-gray-100 w-64 p-2 flex items-center mb-3">
+                  <FaRegEnvelope className="text-gray-400 mr-2" />
+                  <input type="email" name="email" placeholder="Email" className="bg-gray-100 outline-none text-sm flex-1"/>
+                </div>
+                <div className="bg-gray-100 w-64 p-2 flex items-center mb-3">
+                  <MdLockOutline className="text-gray-400 mr-2" />
+                  <input type="password" name="password" placeholder="Password" className="bg-gray-100 outline-none text-sm flex-1"/>
+                </div>
+                <div className="flex justify-between w-64 mb-5">
+                  <label className="flex items-center text-xs"><input type="checkbox" name="remember" className="mr-1"/>Remember me</label>
+                  <a href='#' className="text-green-500 text-xs ml-auto">Forgot Password?</a>
+                </div>
+                <a href='#' className="border-2 border-green-500 text-green-500 rounded-full px-12 py-2 inline-block font-semibold hover:bg-green-500 hover:text-white">Sign in</a>
+              </div>
             </div>
           
           </div>

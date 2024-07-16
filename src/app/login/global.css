@@ -5,45 +5,51 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(80deg, rgb(5,124,172), rgb(199, 10, 114));
     overflow: hidden;
     font-family: 'poppins', sans-serif;
-    background-color: black;
 }
 #up{
-    position: absolute;
+    position: fixed;
     width: 800px;
     height: 800px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgb(5,124,172), rgb(43, 247, 202, 0.5));
+    z-index: -1;
+    /*background-image: linear-gradient(80deg, rgb(5,124,172), rgb(43, 247, 202, 0.5));*/
+    background-image: linear-gradient(80deg, rgb(34, 197, 94, var(--tw-bg-opacity)), rgb(34, 197, 94, var(--tw-bg-opacity)));
     filter: blur(150px);
     animation: down 40s infinite;
 }
 #down{
-    position: absolute;
+    position: fixed;
     right: 0;
     width: 500px;
     height: 500px;
-    border-radius: 50%;
-    background-image: linear-gradient(80deg, rgb(245,207,82,0.5), rgb(199, 10, 114));
+    border-radius: 50%; 
+    z-index: -1;
+    /*background-image: linear-gradient(80deg, rgb(245,207,82,0.5), rgb(199, 10, 114));*/
+    background-image: linear-gradient(80deg, rgb(34, 197, 94, var(--tw-bg-opacity)), rgb(34, 197, 94, var(--tw-bg-opacity)));
     filter: blur(200px);
     animation: up 30s infinite;
 }
 #left{
-    position: absolute;
+    position: fixed;
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgb(5,124,172), rgb(183, 253, 52, 0.8));
+    z-index: -1;
+    /*background-image: linear-gradient(80deg, rgb(5,124,172), rgb(183, 253, 52, 0.8));*/
+    background-image: linear-gradient(80deg, rgb(34, 197, 94, var(--tw-bg-opacity)), rgb(34, 197, 94, var(--tw-bg-opacity)));    
     filter: blur(200px);
     animation: left 30s 1s infinite;
 }
 #right{ 
-    position: absolute;
+    position: fixed;
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgb(26,248,18, 0.6), rgb(199, 10, 52, 0.8));
+    z-index: -1;
+    /*background-image: linear-gradient(80deg, rgb(26,248,18, 0.6), rgb(199, 10, 52, 0.8));*/
+    background-image: linear-gradient(80deg, rgb(34, 197, 94, var(--tw-bg-opacity)), rgb(34, 197, 94, var(--tw-bg-opacity)));
     filter: blur(200px);
     animation: right 40s .5s infinite;
 }
