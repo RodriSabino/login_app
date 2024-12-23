@@ -1,3 +1,5 @@
+import { Providers } from "./providers";
+
 export const metadata = {
     title: 'Next.js',
     description: 'The React Framework for Production',
@@ -6,7 +8,11 @@ export const metadata = {
 export default function RootLayout({ children}){
     return (
         <html lang="en">
-            <body>{children}</body>
+            <body>
+                <Providers>
+                    {children}
+                </Providers>
+            </body>
         </html>
     )
 }

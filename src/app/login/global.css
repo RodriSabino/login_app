@@ -8,13 +8,13 @@ body{
     overflow: hidden;
     font-family: 'poppins', sans-serif;
 }
-#up{
-    position: fixed;
+/*#up{
+position: fixed;
     width: 800px;
     height: 800px;
     border-radius: 50%;
     z-index: -1;
-    /*background-image: linear-gradient(80deg, rgb(5,124,172), rgb(43, 247, 202, 0.5));*/
+    background-image: linear-gradient(80deg, rgb(5,124,172), rgb(43, 247, 202, 0.5));
     background-image: linear-gradient(80deg, rgb(34, 197, 94, var(--tw-bg-opacity)), rgb(34, 197, 94, var(--tw-bg-opacity)));
     filter: blur(150px);
     animation: down 40s infinite;
@@ -26,7 +26,7 @@ body{
     height: 500px;
     border-radius: 50%; 
     z-index: -1;
-    /*background-image: linear-gradient(80deg, rgb(245,207,82,0.5), rgb(199, 10, 114));*/
+    background-image: linear-gradient(80deg, rgb(245,207,82,0.5), rgb(199, 10, 114));
     background-image: linear-gradient(80deg, rgb(34, 197, 94, var(--tw-bg-opacity)), rgb(34, 197, 94, var(--tw-bg-opacity)));
     filter: blur(200px);
     animation: up 30s infinite;
@@ -37,7 +37,7 @@ body{
     height: 500px;
     border-radius: 50%;
     z-index: -1;
-    /*background-image: linear-gradient(80deg, rgb(5,124,172), rgb(183, 253, 52, 0.8));*/
+    background-image: linear-gradient(80deg, rgb(5,124,172), rgb(183, 253, 52, 0.8));
     background-image: linear-gradient(80deg, rgb(34, 197, 94, var(--tw-bg-opacity)), rgb(34, 197, 94, var(--tw-bg-opacity)));    
     filter: blur(200px);
     animation: left 30s 1s infinite;
@@ -48,7 +48,7 @@ body{
     height: 500px;
     border-radius: 50%;
     z-index: -1;
-    /*background-image: linear-gradient(80deg, rgb(26,248,18, 0.6), rgb(199, 10, 52, 0.8));*/
+    background-image: linear-gradient(80deg, rgb(26,248,18, 0.6), rgb(199, 10, 52, 0.8));
     background-image: linear-gradient(80deg, rgb(34, 197, 94, var(--tw-bg-opacity)), rgb(34, 197, 94, var(--tw-bg-opacity)));
     filter: blur(200px);
     animation: right 40s .5s infinite;
@@ -105,3 +105,88 @@ body{
         opacity: 1;
     }
 }
+*/
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Input styling improvements */
+input[type="email"],
+input[type="password"] {
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 0.8rem; /* Reduced font size */
+  background: transparent;
+  width: 100%; /* Slightly reduced width to prevent overflow */
+}
+
+.bg-gray-100 {
+  border-radius: 0.75rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1.3rem 0 1.3rem 1.3rem ;
+  background-color: #f3f4f6;
+  width: 16rem;
+}
+
+.bg-gray-100:focus-within {
+  border-color: #22c55e;
+  background-color: white;
+}
+
+/* Placeholder styling */
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #9ca3af;
+  opacity: 0.8;
+}
+
+/* Hover effects */
+.bg-gray-100:hover {
+  background-color: #f3f4f6;
+  transition: background-color 0.2s ease;
+}
+
+/* Typography improvements */
+h2, p, label, a {
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  letter-spacing: -0.5px;
+}
+
+/* Spacing improvements */
+.py-10 {
+  padding: 2rem 0;
+}
+
+.flex.justify-center.my-2 {
+  margin: 1.5rem 0;
+}
+
+.flex.justify-between {
+  margin: 1rem 0;
+}
+
+.text-gray-400.my-3 {
+  margin: 1.25rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
